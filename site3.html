@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ace Oil And Gases</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="image/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon"/>
+
+
+    <style>
+
+
+        .down{
+            background-color: #a4df89;
+        }
+
+        div.fixed{
+            position:fixed;
+            width:100%;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            background-color: maroon;
+            color: white;
+            font-size: 20px;
+
+        }
+        .abt{
+            color:white;
+        }
+        .flex-container {
+            display: flex;
+            background-color: lightblue;
+            margin-right: 20px;
+            margin-bottom:10px;
+        }
+
+        .flex-cont{
+            display:flex;
+            margin-right:20px;
+            background-color: #87CEEB;
+        }
+
+        .flex-container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .mar{
+            display: flex;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+    <STYLE>A {text-decoration: none;} </STYLE>
+
+    <style>
+
+        .topnav {
+            overflow: hidden;
+            background-color: #ffa861;
+        }
+
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .topnav a, .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body background="Image/oil.jpg" style="margin-right: 20px">
+
+<nav class="navbar">
+       <span class="open-side">
+           <a href="#" onclick="openSideMenu()">
+               <svg width="30" height="30">
+                   <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                   <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                   <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+               </svg>
+           </a>
+       </span>
+
+    <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="site1.html">Hyderabad</a>
+    <a href="site2.html">Vijayawada</a>
+    <a href="site3.html">Vizag</a>
+    <a href="calculator.html" target="_blank">Calculator</a>
+
+</div>
+
+
+
+<script>
+    (function() {
+        var cx = '016145384779910582401:voezn7at524';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+<gcse:search></gcse:search>
+
+
+
+<div id="main">
+    <div class="flex-container">
+        <span > <a href="index.html"><img src="newlogo.png" height=100 width=100></a>&ensp;&ensp;&ensp;<span style="font-size:130px;color:red;font-family:algerian"> Ace Oil and Gas </span></span>
+    </div>
+
+
+    <marquee scrollamount="10" style="margin-top: 10px" onmouseover="this.stop();" onmouseout="this.start();" class="mar"> Welcome to Ace Oil and Gas Ltd. We are the largest producer* of Petroleum in India. Explore our site for more information about us </marquee>
+
+
+
+    <div class="flex-cont">
+        <span style="font-size:80px;font-family:vendata" align="center"> Vizag Oil Drilling </span>
+    </div>
+
+    <p id="flex2" >
+        <br>
+        Vizag Oil Drilling is an offshore oilfield 50 kilometres (31 mi) off the coast of Vizag, India, in about 75 m of water. The oil operations are run by Ace Oil and Gas Limited. Vizag Oil Drilling field was discovered by an Indian oil exploration team operating from the seismic exploration vessel Academic Arkhangelsky.
+
+        <br>
+
+        <br>
+
+    </p>
+    <span align="center"><img src="Image/vizag.jpg" width="300" onmouseover="this.width=700;" onmouseout="this.width=300" align="center">
+</span>
+
+
+    <div align="left" style="margin-right: 20px">
+
+        <div id="googleMap" style="width:100%;height:500px;margin-top:10px"></div>
+
+        <script>
+            function myMap() {
+                var latlong = {lat: 16.5062,lng: 80.6480}, mapProp= {
+                    center:{lat:17.2281812,lng:80.0525088},
+                    zoom:7,
+                };
+                map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                var latlong1 = {lat: 17.3850, lng:78.4867};
+                var latlong3 = {lat: 17.3850, lng:48.4867};
+                var latlong2 = {lat:17.6868, lng:83.2185};
+
+
+                var marker2 = new google.maps.Marker({
+                    position: latlong2,
+                    map: map,
+                    icon:'Image/vizagicon.png',
+                    title: 'Vizag site'
+                });
+
+
+
+                var infowindow2 =  new google.maps.InfoWindow({
+                    content: 'Vizag Oil Drilling Site'+'</br>Lat:17.6868 Long:83.2185',
+                    map: map,
+                    position: latlong2
+                });
+                marker2.addListener('mouseover', function() {
+                    infowindow2.open(map, marker2);
+                });
+
+                marker2.addListener('mouseout', function() {
+                    infowindow2.close();
+                });
+
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXgUnEyIzBz9HUP4HvDTIUIrq2NWgOtts&callback=myMap"></script>
+    </div>
+
+
+</div>
+
+<script src="js/main.js"></script>
+
+<div class="down" align="center">
+    Copyright &copy; Ace Oil and Gases &nbsp;&nbsp;&nbsp;
+    <a href="about.html" class="abt">About Us</a>&ensp;|&ensp;<a class="abt" href="contact.html">Contact</a>
+</div>
+</body>
+</html>
